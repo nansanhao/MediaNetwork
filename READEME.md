@@ -11,4 +11,4 @@
 ## 三、 实验内容及过程
 我们采用python作为开发语言，使用networkx和matplotlib.pyplot两个包来描绘图的结构，将数据集的节点和边描绘出来。如下：（黄色的是节点，黑色的是边）
 
-![img](https://github.com/nansanhao/MediaNetwork/blob/master/graph_1.png?raw=true)
+![结果图](https://github.com/nansanhao/MediaNetwork/blob/master/graph_1.png?raw=true)
