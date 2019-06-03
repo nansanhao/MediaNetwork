@@ -9,6 +9,32 @@
 
 软件：计算机程序语言开发平台，如C、C++、Java、Matlab。本实验选择了python作为开发语言。
 ## 三、 实验内容及过程
-我们采用python作为开发语言，使用networkx和matplotlib.pyplot两个包来描绘图的结构，将数据集的节点和边描绘出来。如下：（黄色的是节点，黑色的是边）
-
+1. 我们采用python作为开发语言，使用networkx和matplotlib.pyplot两个包来描绘图的结构，将数据集的节点和边描绘出来。如下：（黄色的是节点，黑色的是边）
 ![结果图](https://github.com/nansanhao/MediaNetwork/blob/master/graph_1.png?raw=true)
+
+2. 测度（Contents from ppt）
+
+    1 Centrality
+
+        1.1 degree centrality（度中心性）
+        1.2 normalized degree centrality（标准化度中心性）
+        1.3 Eigenvector centrality（特征向量中心性）
+        1.4 Eigenvector centrality
+        1.5 Kartz Centality（Katz中心性）
+        1.6 Pagerank（网页排名）
+        1.7 Betweenness Centrality（间接中心性）
+        1.8 Closeness Centrality（紧密中心性）
+        1.9 Group Centality
+
+    2 Transitivity and Reciprocity
+
+        2.1 Transitivity
+            2.1.1 global
+        2.2 Reciprocity
+
+    3 Balance and Status 
+
+    4 Similarity
+
+        4.1 Similarity
+        4.2 Regular Equivalence
