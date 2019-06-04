@@ -27,7 +27,7 @@
 
     2 Transitivity and Reciprocity
 
-        2.1 Transitivity
+        2.1 Transitivity（传递性）
             2.1.1 global
         2.2 Reciprocity（互易性）
 
@@ -41,6 +41,8 @@
 
 ## 文件说明：
     test_1.py是第一问代码
+
     test_2.py是第二问代码
+
     data开头的是数据集文件夹
 
