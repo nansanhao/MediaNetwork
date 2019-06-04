@@ -147,7 +147,7 @@ def closenessCentrality(G):
         else:
             closeness_centrality[n] = 0.0
     return closeness_centrality
-
+# 返回字典的前n项
 def PrintNOfType(Obj,n,type):
     print(type)
     temp={}
@@ -161,7 +161,7 @@ def PrintNOfType(Obj,n,type):
 
 
 # 读取边的文件
-edges = open("data_t/edge.csv", "r")
+edges = open("data_2/edge.csv", "r")
 edgeReader = csv.reader(edges)
 # 将边加入图中
 G = nx.DiGraph()

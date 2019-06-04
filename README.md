@@ -37,3 +37,10 @@
 
         4.1 Similarity
         4.2 Regular Equivalence
+
+
+## 文件说明：
+    test_1.py是第一问代码
+    test_2.py是第二问代码
+    data开头的是数据集文件夹
+
