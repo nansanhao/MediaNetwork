@@ -19,22 +19,21 @@
         1.1 degree centrality（度中心性）
         1.2 normalized degree centrality（标准化度中心性）
         1.3 Eigenvector centrality（特征向量中心性）
-        1.4 Eigenvector centrality
-        1.5 Kartz Centality（Katz中心性）
-        1.6 Pagerank（网页排名）
-        1.7 Betweenness Centrality（间接中心性）
-        1.8 Closeness Centrality（紧密中心性）
-        1.9 Group Centality
+        1.4 Kartz Centality（Katz中心性）
+        1.5 Pagerank（网页排名）
+        1.6 Betweenness Centrality（间接中心性）
+        1.7 Closeness Centrality（紧密中心性）
+        1.8 Group Centality
 
     2 Transitivity and Reciprocity
 
         2.1 Transitivity
             2.1.1 global
-        2.2 Reciprocity
+        2.2 Reciprocity（互易性）
 
     3 Balance and Status 
 
-    4 Similarity
+    4 Similarity（相似性）
 
         4.1 Similarity
         4.2 Regular Equivalence

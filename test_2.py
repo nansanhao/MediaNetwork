@@ -3,8 +3,9 @@ import scipy.sparse as sp
 import numpy as np
 import matplotlib.pyplot as plt
 import csv
+import operator
 
-# 中文输出
+# 控制台中文输出
 import io
 import sys
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer,encoding='utf-8')
@@ -147,6 +148,18 @@ def closenessCentrality(G):
             closeness_centrality[n] = 0.0
     return closeness_centrality
 
+def PrintNOfType(Obj,n,type):
+    print(type)
+    temp={}
+    t=sorted(Obj.items(),key=operator.itemgetter(0))
+    for item in t:
+        temp.update({item})
+        n=n-1
+        if n==0:
+            break
+    print(temp)
+
+
 # 读取边的文件
 edges = open("data_t/edge.csv", "r")
 edgeReader = csv.reader(edges)
@@ -157,26 +170,17 @@ for item in edgeReader:
 edges.close()
 
 # 测度
-print("度中心性：",)
-print(centralityDegree(G))
+print("degree centrality（度中心性）：",)
+print(sorted(centralityDegree(G))[:5])
 
+PrintNOfType(centralityEigenvector(G),5,"Eigenvector centrality（特征向量中心性）：")
+PrintNOfType(centralityKatz(G),5,"Kartz Centality（Katz中心性）：")
+PrintNOfType(PageRank(G),5,"PageRank（网页排名）：")
+PrintNOfType(centralityBetweenness(G),5,"Betweenness Centrality（间接中心性）：")
+PrintNOfType(closenessCentrality(G),5,"Closeness Centrality（紧密中心性）：")
 
-print("特征向量中心性：")
-print(centralityEigenvector(G))
+print("Transitivity（传递性）：")
+print(nx.transitivity(G))
 
-print("Katz中心性：")
-print(centralityKatz(G))
-
-print("PageRank：")
-print(PageRank(G))
-
-print("Betweenness：")
-print(centralityBetweenness(G))
-
-print("Closeness：")
-print(closenessCentrality(G))
-
-nx.draw(G,node_color='y',with_labels=True,node_size=300,width=1)
-
-plt.show()
-
+print("Reciprocity（互易性）：")
+print(nx.reciprocity(G))
